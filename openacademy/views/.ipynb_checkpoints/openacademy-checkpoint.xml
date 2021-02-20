@@ -22,9 +22,6 @@
                                     </tree>
                                 </field>
                             </page>
-                            <page string="New Tab">
-                                <field name="test_field"/>
-                            </page>
                         </notebook>
                     </sheet>
                 </form>
