@@ -9,7 +9,7 @@ class Course(models.Model):
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text()
-    new_field = fields.Text();
+    new_field = fields.Text(string="New Field");
     
     responsible_id = fields.Many2one('res.users',
         ondelete='set null', string="Responsible", index=True)
