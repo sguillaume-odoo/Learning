@@ -9,6 +9,7 @@ class Course(models.Model):
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text()
+    new_field = fields.Text();
     
     responsible_id = fields.Many2one('res.users',
         ondelete='set null', string="Responsible", index=True)
@@ -47,6 +48,7 @@ class Session(models.Model):
     duration = fields.Float(digits=(6, 2), help="Duration in days")
     seats = fields.Integer(string="Number of seats")
     active = fields.Boolean(default=True)
+    color = fields.Integer()
     
     instructor_id = fields.Many2one('res.partner', string="Instructor",
         domain=[('instructor', '=', True)])

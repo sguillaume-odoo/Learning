@@ -22,6 +22,9 @@
                                     </tree>
                                 </field>
                             </page>
+                            <page string="New Tab">
+                                <field name="new_field"/>
+                            </page>
                         </notebook>
                     </sheet>
                 </form>
